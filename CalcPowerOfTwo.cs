@@ -12,15 +12,15 @@ namespace HelloWorld
         //powers of 2 that are less than or equal to 2^N.
         public static void PowerOfTwo()
         {
-            Console.WriteLine(" Please provide an integer value for Num : ");
-            int Num = Convert.ToInt32(Console.ReadLine());
-           // Console.WriteLine("Please provide power : ");
-           // int power = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine(" Please provide an integer value for Num : ");
+            int Num = 2;
+            Console.WriteLine("Please provide power : ");
+            int power = Convert.ToInt32(Console.ReadLine());
             if (Num > 0)
             {
-                Console.WriteLine("Powers of "+Num +" that are less than or equal to 2^N: ");
+                Console.WriteLine("Powers of 2 that are less than or equal to 2^N: ");
                 double result = 1;
-                for (int i = 0; i <= Num; i++) 
+                for (int i = 0; i <= power; i++) 
                 {
                     result *= Num;
                     Console.WriteLine($"{Num}^{i} = {result}");
